@@ -5,7 +5,7 @@ library(tidyverse)
 # Import data
 # autopsies completed during billing cycle
 autopsies <- 
-  readxl::read_excel(here("data", "2022.09.28-2022.10.27_autopsies.xls"))
+  readxl::read_excel(here("data", "2022.11.28-2022.12.27_autopsies.xls"))
 
 # Stains completed
 stains <- 
@@ -33,11 +33,11 @@ block_stain_counts <-
 
 # Output results to Excel
 # Counts of blocks and stains performed on each autopsy
-writexl::write_xlsx(block_stain_counts, here("output", "2022-10_autopsy-counts.xlsx"))
+writexl::write_xlsx(block_stain_counts, here("output", "2022-12_autopsy-counts.xlsx"))
 
 # Stains performed for each autopsy
 stains %>% 
   filter(str_detect(`Result ID`, "^AU")) %>% select(`Result ID`, stain) %>% 
-  writexl::write_xlsx((here("output", "2022-10_autopsy-stains.xlsx")))
+  writexl::write_xlsx((here("output", "2022-12_autopsy-stains.xlsx")))
   
 

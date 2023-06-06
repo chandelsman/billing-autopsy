@@ -6,7 +6,7 @@ library(stringr)
 # Import data
 # autopsies completed during billing cycle
 autopsies <- 
-  readxl::read_excel(here("data", "2023.03.28-2023.04.27_autopsies.xls"))
+  readxl::read_excel(here("data", "2023.04.28-2023.05.27_autopsies.xls"))
 
 # Stains completed
 stains <- 
@@ -34,11 +34,11 @@ block_stain_counts <-
 
 # Output results to Excel
 # Counts of blocks and stains performed on each autopsy
-writexl::write_xlsx(block_stain_counts, here("output", "2023-04_autopsy-counts.xlsx"))
+writexl::write_xlsx(block_stain_counts, here("output", "2023-05_autopsy-counts.xlsx"))
 
 # Stains performed for each autopsy
 stains %>% 
   filter(str_detect(`Result ID`, "^AU")) %>% select(`Result ID`, stain) %>% 
-  writexl::write_xlsx((here("output", "2023-04_autopsy-stains.xlsx")))
+  writexl::write_xlsx((here("output", "2023-05_autopsy-stains.xlsx")))
   
 

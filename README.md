@@ -10,7 +10,7 @@ Data is gathered from a dynamic report in LigoLab using completed date and Resul
 
 ### Base tab
 
-- Completed = 27th of previous month throuh 28th of current month
+- Completed = 28th of previous month throuh 27th of current month
 
 ### Extended tab
 
@@ -18,7 +18,7 @@ Data is gathered from a dynamic report in LigoLab using completed date and Resul
 
 ### Export Data
 
-- Save output of each query as excel (YYYY.MM.DD-YYYY.MM.DD_autopsies.xls) in the project data folder.
+- Save output as excel (YYYY.MM.DD-YYYY.MM.DD_autopsies.xls) in the project data folder.
 
 ## Ouput
 

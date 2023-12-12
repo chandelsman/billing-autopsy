@@ -10,7 +10,7 @@ Data is gathered from a dynamic report in LigoLab using completed date and Resul
 
 ### Base tab
 
-- Completed = 28th of previous month throuh 27th of current month
+- Completed = 28th of previous month through 27th of current month
 
 ### Extended tab
 
